@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Cheese", "category": "Food" },
+  { "id": 2, "name": "Bread", "category": "Food" },
+  { "id": 3, "name": "Shampoo", "category": "Cosmetics" },
+  { "id": 4, "name": "Soap", "category": "Cosmetics" },
+  { "id": 5, "name": "Toothpaste", "category": "Health" },
+  { "id": 6, "name": "Sprite", "category": "Beverage" },
+  { "id": 7, "name": "Fanta", "category": "Beverage" },
+  { "id": 8, "name": "CocaCola", "category": "Beverage" },
+  { "id": 9, "name": "Pepsi", "category": "Beverage" },
+  { "id": 10, "name": "Toothbrush", "category": "Health" }
+]
