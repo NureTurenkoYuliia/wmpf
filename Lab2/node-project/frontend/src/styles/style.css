@@ -1,0 +1,283 @@
+body {
+  font-family: Verdana, sans-serif;
+  padding: 40px;
+  background: #f0f2f5;
+  color: #1c1e21;
+}
+
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 350px;
+  background: #fff;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.content {
+  flex: 2;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.user-input{
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.users{
+  border-radius: 8px;
+}
+
+.users h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.users ul {
+  list-style: none;
+  padding: 0;
+}
+
+.users li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #c0cac6;
+  padding-bottom: 10px;
+}
+
+.user-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.user-row:hover {
+  background: #d3d9db;
+}
+
+.user-row span {
+  font-size: 1.1rem;
+}
+
+.post {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #edf2f7;
+}
+
+.post-header {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.post-header .comment-author {
+  font-size: 0.8rem;
+  color: #84A98C;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.post-content p {
+  font-size: 1.25rem;
+  color: #2F3E46;
+  line-height: 1.5;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+}
+
+.post-comments-section {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.post-input {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0 5px;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+  border-color: #4caf50;
+}
+
+.comment-input {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0 5px;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.comment-item {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #84A98C;
+}
+
+.comment-header {
+  margin-bottom: 4px;
+}
+
+.comment-author {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #52796F;
+  text-transform: lowercase;
+}
+
+.comment-text {
+  font-size: 1.1rem;
+  color: #2F3E46;
+  margin: 0;
+  line-height: 1.4;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: #45a049;
+  transform: translateY(-1px); /* Ефект легкого підняття */
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
+}
+
+.post button {
+  background: #ebedf0;
+  color: #4b4f56;
+}
+
+.post button:hover {
+  background: #dadde1;
+}
+
+.profile {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.chat-layout {
+  display: flex;
+  height: 90vh;
+}
+
+.friends-panel {
+  width: 350px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.chat-panel {
+  flex: 1;
+  background: #f0f0f0;
+  padding: 10px;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.messages {
+  flex: 1;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+}
+
+.msg {
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
+  max-width: 60%;
+}
+
+.message-input{
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  height: 60px;
+}
+
+.my {
+  background: #a8dca9;
+  margin-left: auto;
+}
+
+.other {
+  background: #e6e6e6;
+}
+
+.friend-item {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.friend-item:hover {
+  background: #f5f5f5;
+}
+
+.open-profile {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.back-btn {
+  position: absolute;
+  top: 5px;
+  left: 14px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #6d8b6e;
+}
+
+.back-btn:hover {
+  opacity: 0.9;
+}
