@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MyFirstApplication</string>
+    <string name="task_hint">Введіть завдання</string>
+    <string name="load_data">Завантажити дані</string>
+    <string name="post_details">ID: %1$d\n\nTitle:\n%2$s\n\nBody:\n%3$s</string>
+    <string name="error_message">Помилка: %1$s</string>
+
+    <string name="add_btn">Додати</string>
+    <string name="btn_click_me">Натисни мене</string>
+    <string name="btn_save">Зберегти</string>
+    <string name="btn_add_recipe">Додати рецепт</string>
+
+    <string name="hint_title">Назва</string>
+    <string name="hint_ingredients">Інгредієнти</string>
+    <string name="hint_instruction">Інструкція</string>
+    <string name="recipe_details">Назва:\n%1$s\n\nІнгредієнти:\n%2$s\n\nІнструкція:\n%3$s</string>
+
+    <string name="task_1">Завдання 1</string>
+    <string name="task_2">Завдання 2</string>
+    <string name="task_3">Завдання 3</string>
+    <string name="task_4">Завдання 4</string>
+</resources>

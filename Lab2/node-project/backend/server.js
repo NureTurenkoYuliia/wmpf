@@ -12,10 +12,10 @@ const messageRoutes = require("./routes/messages");
 const chatRoutes = require("./routes/chats");
 
 const app = express();
-app.use(compression());
 app.use(cors());
 app.use(express.json());
 app.use(logger);
+app.use(compression());
 
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
