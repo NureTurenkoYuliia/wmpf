@@ -22,20 +22,20 @@ public class LogsController : ControllerBase
         if (pageSize > 100) pageSize = 100;
 
         var logs = await _logRepository.GetPagedLogsAsync(page, pageSize);
-        return Ok();
+        return Ok(logs);
     }
 
     [HttpGet("slow")]
     public async Task<ActionResult<IEnumerable<RequestLog>>> GetSlowRequests([FromQuery] long minDurationMs = 500)
     {
         var slowLogs = await _logRepository.GetSlowRequestsAsync(minDurationMs);
-        return Ok();
+        return Ok(slowLogs);
     }
 
     [HttpGet("user/{userId:int}")]
     public async Task<ActionResult<IEnumerable<RequestLog>>> GetLogsByUserId(int userId)
     {
         var userLogs = await _logRepository.GetLogsByUserIdAsync(userId);
-        return Ok();
+        return Ok(userLogs);
     }
 }

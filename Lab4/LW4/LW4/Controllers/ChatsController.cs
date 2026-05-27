@@ -71,7 +71,7 @@ public class ChatsController : ControllerBase
         var query = new GetChatsByUserIdQuery(userId);
         var result = await _mediator.Send(query);
 
-        return Ok();
+        return Ok(result);
     }
 
     [HttpPost("{chatId:int}/users/{userId:int}")]

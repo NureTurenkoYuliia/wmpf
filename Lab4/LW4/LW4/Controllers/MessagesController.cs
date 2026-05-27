@@ -21,7 +21,7 @@ public class MessagesController : ControllerBase
     public async Task<ActionResult<IEnumerable<Message>>> GetByChatId(int chatId)
     {
         var messages = await _messageRepository.GetByChatIdAsync(chatId);
-        return Ok();
+        return Ok(messages);
     }
 
     [HttpPost]

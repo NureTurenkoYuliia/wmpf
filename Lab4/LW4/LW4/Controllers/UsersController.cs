@@ -23,7 +23,7 @@ public class UsersController : ControllerBase
     public async Task<ActionResult<IEnumerable<User>>> GetAll()
     {
         var users = await _userRepository.GetAllAsync();
-        return Ok();
+        return Ok(users);
     }
 
     [HttpGet("{id:int}")]
@@ -32,7 +32,7 @@ public class UsersController : ControllerBase
         var user = await _userRepository.GetByIdAsync(id);
         if (user == null) return NotFound($"Користувача з ID {id} не знайдено.");
 
-        return Ok();
+        return Ok(user);
     }
 
     [HttpPost]

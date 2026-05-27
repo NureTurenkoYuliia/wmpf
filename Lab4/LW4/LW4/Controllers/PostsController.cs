@@ -24,7 +24,7 @@ public class PostsController : ControllerBase
     public async Task<ActionResult<IEnumerable<Post>>> GetAll()
     {
         var posts = await _postRepository.GetAllAsync();
-        return Ok();
+        return Ok(posts);
     }
 
     [HttpPost]

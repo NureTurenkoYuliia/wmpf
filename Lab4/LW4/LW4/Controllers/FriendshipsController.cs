@@ -21,7 +21,7 @@ public class FriendshipsController : ControllerBase
     public async Task<ActionResult<IEnumerable<Friendship>>> GetAll()
     {
         var friendships = await _friendshipRepository.GetAllAsync();
-        return Ok();
+        return Ok(friendships);
     }
 
     [HttpPost]

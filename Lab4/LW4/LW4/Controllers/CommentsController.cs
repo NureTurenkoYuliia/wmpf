@@ -20,7 +20,7 @@ public class CommentsController : ControllerBase
     public async Task<ActionResult<IEnumerable<Comment>>> GetByPostId(int postId)
     {
         var comments = await _commentRepository.GetByPostIdAsync(postId);
-        return Ok();
+        return Ok(comments);
     }
 
     [HttpPost]
