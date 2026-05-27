@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MyFirstApplication</string>
+
+    <string name="hint_username">Username</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_date_of_birth">Date of birth</string>
+    <string name="hint_bio">Bio</string>
+    <string name="btn_create_user">Create user</string>
+
+    <string name="hint_search_posts">Search posts</string>
+    <string name="btn_search">Search</string>
+    <string name="hint_create_post">Create post</string>
+    <string name="btn_create">Create</string>
+
+    <string name="hint_search_users">Search users</string>
+    <string name="btn_comments">Comments</string>
+    <string name="btn_add_friend">Add friend</string>
+
+    <string name="hint_write_comment">Write comment</string>
+    <string name="btn_add_comment">Add comment</string>
+
+    <string name="btn_users">Users</string>
+    <string name="btn_friends">Friends</string>
+    <string name="btn_posts">Posts</string>
+    <string name="btn_chats">Chats</string>
+
+    <string name="hint_message">Message</string>
+    <string name="btn_send">Send</string>
+
+
+</resources>
